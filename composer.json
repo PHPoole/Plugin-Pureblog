@@ -1,15 +1,14 @@
 {
-    "name": "phpoole/plugin-bootsite",
+    "name": "phpoole/plugin-pureblog",
     "type": "symfony1-plugin",
-    "description": "PHPoole default layouts",
-    "keywords": ["phpoole", "plugin", "bootstrap"],
+    "description": "PHPoole blog layouts",
+    "keywords": ["phpoole", "plugin", "blog", "pure"],
     "license": "MIT",
     "require": {
         "php": ">=5.3",
-        "composer/installers": "~1.0",
-        "phpoole/plugin-twbootstrap": "@dev"
+        "composer/installers": "~1.0"
     },
     "extra": {
-        "installer-name": "Bootsite"
+        "installer-name": "Pureblog"
     }
 }
