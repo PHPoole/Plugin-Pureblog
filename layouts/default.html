@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/combo/1.11.2?/css/main-grid-old-ie.css&/css/layouts/blog-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="assets/css/pure.blog.css">
+  <!--<![endif]-->  
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-med-1-4">
+      <div class="header">
+        <hgroup>
+          <h1 class="brand-title">A Sample Blog</h1>
+          <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+        </hgroup>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="pure-button" href="http://purecss.io">Pure</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="content pure-u-1 pure-u-med-3-4">
+      <div>
+        {{ page.content }}
+        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal pure-menu-open">
+            <ul>
+              <li><a href="http://purecss.io/">About</a></li>
+              <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
+              <li><a href="http://github.com/yui/pure/">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://yui.yahooapis.com/3.14.1/build/yui/yui-min.js"></script>
+  <script>
+    YUI().use('node-base', 'node-event-delegate', function (Y) {
+      // This just makes sure that the href="#" attached to the <a> elements
+      // don't scroll you back up the page.
+      Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+      }, 'a[href="#"]');
+    });
+  </script>
+</body>
+</html>

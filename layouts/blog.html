@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block pagefooter %}
+<!-- A wrapper for all the blog posts -->
+<div class="posts">
+  <h1 class="content-subhead">Recent Posts</h1>
+{% for pots in site.pages('blog') %}
+  <section class="post">
+    <header class="post-header">
+      <!--<img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="48" width="48" src="/img/common/ericf-avatar.png">-->
+      <h2 class="post-title"><a href="{{ site.base_url }}/{{ post.path }}">{{ post.title }}</a></h2>
+      <p class="post-meta">
+        By <a class="post-author" href="#">{{ post.author }}}</a><!-- under <a class="post-category post-category-tag" href="#">Tag</a>-->
+      </p>
+    </header>
+    <div class="post-description">
+      <p>
+        {{ post.content }}
+      </p>
+    </div>
+  </section>
+{% endfor %}
+</div>
+{% endblock pagefooter %}
