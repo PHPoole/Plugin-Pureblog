@@ -1,9 +1,9 @@
-Bootsite plugin is a default [Twitter Bootstrap](http://getbootstrap.com) theme for [PHPoole](http://github.com/Narno/PHPoole/).
+Pureblog plugin is a [Pure](http://purecss.io) blog theme for [PHPoole](http://github.com/Narno/PHPoole/).
 
 Installation
 ------------
 
-    php composer.phar require phpoole/plugin-bootsite:@dev --prefer-dist
+    php composer.phar require phpoole/plugin-pureblog:@dev --prefer-dist
 
 
 Usage
