@@ -7,6 +7,8 @@ use PHPoole\Utils;
  */
 Class Pureblog extends Plugin
 {
+    const LAYOUTS_DIRNAME = 'pureblog';
+
     public function preInit($e)
     {
         $phpoole = $e->getTarget();
@@ -22,7 +24,7 @@ Class Pureblog extends Plugin
         );
         Utils\RecursiveCopy(
             __DIR__ . '/layouts',
-            $phpoole->getWebsitePath() . '/' . PHPoole::PHPOOLE_DIRNAME . '/' . PHPoole::LAYOUTS_DIRNAME
+            $phpoole->getWebsitePath() . '/' . PHPoole::PHPOOLE_DIRNAME . '/' . PHPoole::LAYOUTS_DIRNAME . '/' . self::LAYOUTS_DIRNAME
         );
         $phpoole->addMessage('Pureblog layouts and assets copied');
     }
