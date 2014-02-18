@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PHPoole is a light and easy static website / blog generator written in PHP. It parses your content written with Markdown, merge it with layouts and generates static HTML files.">
+  <title>PHPoole - Contact</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://phpoole.narno.org/Plugin-Pureblog/assets/css/pure.blog-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://phpoole.narno.org/Plugin-Pureblog/assets/css/pure.blog.css">
+  <!--<![endif]-->  
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-med-1-4">
+      <div class="header">
+        <hgroup>
+          <h1 class="brand-title">PHPoole</h1>
+          <h2 class="brand-tagline">Light and easy static website generator!</h2>
+        </hgroup>
+        <nav class="nav">
+          <ul class="nav-list">
+                        <li class="nav-item">
+              <a class="pure-button" href="http://phpoole.narno.org/Plugin-Pureblog">Blog</a>
+            </li>
+                        <li class="nav-item">
+              <a class="pure-button" href="http://phpoole.narno.org/Plugin-Pureblog/contact">Contact</a>
+            </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="content pure-u-1 pure-u-med-3-4">
+      <div>
+                <h2>Contact</h2>
+
+<p>Contact me by email: contact+phpoole@narno.org</p>
+
+                        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal pure-menu-open">
+            <ul>
+              <li><a href="http://narno.org">Arnaud Ligny</a></li>
+              <li><a href="http://phpoole.narno.org">PHPoole v0.0.2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://yui.yahooapis.com/3.14.1/build/yui/yui-min.js"></script>
+  <script>
+    YUI().use('node-base', 'node-event-delegate', function (Y) {
+      // This just makes sure that the href="#" attached to the <a> elements
+      // don't scroll you back up the page.
+      Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+      }, 'a[href="#"]');
+    });
+  </script>
+</body>
+</html>
