@@ -1,5 +1,7 @@
 Pureblog plugin is a [Pure CSS](http://purecss.io) blog theme for [PHPoole](http://github.com/Narno/PHPoole/).
 
+![Pureblog screenshot](https://raw.github.com/PHPoole/Plugin-Pureblog/master/docs/Pureblog.png)
+
 Installation
 ------------
 
