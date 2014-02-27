@@ -11,5 +11,5 @@ Installation
 Usage
 -----
 
-* Run a new website (```--init```)
+* Run a new website
 * Add ```layouts = pureblog``` in ```[site]``` section of the config file.
